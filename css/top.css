@@ -1,0 +1,282 @@
+@charset "UTF-8";
+@import url(common.css);
+
+.topImg img {
+    width: 100%;
+    /*height: 100vh;
+    background-image:url(../img/main-slid1.png);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+/*.topImg img:hover{
+    opacity: 0.7;
+}*/
+
+
+.junle{
+    text-align: center;
+}
+
+.ribon{
+    text-align:center;
+    position: relative;
+    padding:40px 0 32px 0;
+}
+
+
+
+.ribon:hover{
+    opacity: 0.7;
+}
+
+.ribon:active{
+    position: relative;
+    top:7px;
+}
+
+.headLine,.headLine a{
+    font-size: 24px;
+    font-weight: bold; 
+    color:#333;
+    text-decoration: none;
+}
+
+
+.junlePosition{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-160%);
+}
+
+.pickupPosition{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-160%);
+}
+
+.junleBox{
+    background-color: #f6f6f6;
+    box-sizing: border-box;
+    border: 2px dotted #666;
+    margin-right: 20px;
+    width:300px;
+}
+
+
+.junleBox:hover{
+    opacity: 0.7;
+    position: relative;
+    top:7px;
+}
+
+.lastChild{
+    margin-right: 0;
+}
+
+.junle p{
+    padding-bottom:32px;
+}
+
+.junleContens{
+    display: flex;
+}
+
+.junleHeadline a{
+    font-size: 28px;
+    font-weight:bold;
+    text-decoration: none;
+    color:#333; 
+    padding: 16px;
+    display: block;
+}
+
+.junleIcon{
+    padding-bottom: 16px;
+}
+
+.tokusyuuColor{
+    line-height: 1.75;
+    background-color: #ffe200;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.pickupText{
+    padding-bottom:32px;
+}
+
+.pickupText p{
+    line-height: 1.75;
+}
+
+.pickup{
+    display: flex;
+    margin: 0 auto;
+}
+
+.pickupBox{
+    background-color: #f6f6f6;
+    box-sizing: border-box;
+    border: 2px dotted #666;
+    text-align: center;
+    width:459px;
+    margin-right: 20px;
+    padding-top:24px;
+}
+
+
+.pickupBox:hover{
+    position: relative;
+    top:7px;
+}
+
+.pickupBox a:hover{
+    opacity: 0.7;
+}
+
+.pickupHeadline a{
+    text-decoration: none;
+    background: linear-gradient(transparent 50%, #ffe200 50%);
+    color:#333;
+}
+
+.pickupHeadline{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.pickupImg{
+    padding:24px 0;
+}
+
+.pickupBox p{
+    line-height: 1.75;
+    padding-bottom: 24px;
+}
+
+.pickupMore{
+    text-decoration: none;
+    color: #333;
+    background: linear-gradient(transparent 0%, #ffe200 0%);
+}
+
+.contactWrapper{
+    padding:72px 0;
+    text-align: center;
+}
+
+.navigation{
+    opacity: 0.7;
+}
+
+.navigation a:hover{
+    opacity:0.7;
+}
+
+/*mobaile スマホ横サイズ*/
+@media screen and (max-width:768px) { 
+
+.ribon{
+    width: 49%;
+    margin:0 auto;
+}
+    
+.junleContens{
+    flex-direction: column;
+}
+ 
+.junleBox{
+    width: 50%;
+    margin: 0 auto 20px auto;
+}
+   
+.junleImg{
+    width: 100%;
+}
+    
+.pickup{
+    flex-direction: column; 
+} 
+    
+.pickupBox{
+    margin: 0 auto 20px auto;
+}
+    
+}
+
+/*mobaile スマホ縦サイズ*/
+@media screen and (max-width:600px) { 
+    
+.ribon img{
+    width: 95%;
+}
+    
+.junle p{
+    padding:0 15px 20px 15px;
+    line-height: 1.75;
+}
+
+    
+.headLine,.headLine a{
+    font-size: 16px;
+} 
+    
+.tokusyuuColor{
+    padding:0 15px;
+}
+
+
+.junleBox{
+    width: 90%;
+    margin: 0 auto 20px auto;
+}
+    
+.junleImg{
+    width: 100%;
+}
+/*width:100％を指定しないと画像がはみだした。なぜ？*/
+
+.junleContens{
+    flex-direction: column;
+}
+/*フレックスを縦並びにしたいとき、どっちを使いますか？*/
+
+.pickup{
+    flex-direction: column; 
+}
+    
+.pickupImg img{
+     width: 100%;   
+}
+/*width:100％を指定しないと画像がはみだした。なぜ？*/
+
+.pickupBox{
+    width: 90%;
+    margin: 0 auto 20px auto;
+}
+
+.junleHeadline a{
+    font-size: 20px;
+}
+
+
+.pickupHeadline{
+    font-size: 20px;
+}
+    
+.pickupText{
+    text-align: left;
+    padding:0 15px;
+}
+    
+.textBottom{
+    padding-bottom: 15px;
+}
+    
+
+}
+
+

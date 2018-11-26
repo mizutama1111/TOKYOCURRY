@@ -1,0 +1,135 @@
+@charset "UTF-8";
+@import url(common.css);
+
+.main-wrapper{
+    margin-top: 40px;
+}
+
+.ribon{
+    text-align: center;
+    position: relative;
+    padding:40px 0 32px 0;
+}
+
+.headLine{
+    font-size: 24px;
+    font-weight: bold; 
+    color:#333;
+    text-decoration: none;
+}
+
+.pickupPosition{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-160%);
+    font-size: 24px;
+    font-weight: bold; 
+    color:#333;
+    text-decoration: none;
+}
+
+.article-wrapper{
+    background-color: #f6f6f6;
+    box-sizing: border-box;
+    border: 2px dotted #666;
+    padding-top: 32px;
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.rokaContentsContainer{
+    width: 780px;
+    margin: 0 auto;  
+}
+
+.headLine{
+    font-size: 30px;
+    font-weight: bold; 
+    color:#333;
+    text-decoration: none;
+    text-decoration: none;
+    background: linear-gradient(transparent 50%, #ffe200 50%);
+    color:#333;
+    display: inline;
+}
+
+.rokaImg{
+    padding: 32px 0;
+}
+
+.rokaImgFig{
+    padding-top:32px;
+}
+
+.rokaText{
+    text-align: left;
+    line-height: 1.75;
+}
+
+figcaption{
+    font-size: 12px;
+    padding: 16px;
+}
+
+.addresWrapper{
+    padding:80px 0 40px 0;
+    text-align: left;
+    line-height: 1.75;
+}
+
+/*mobaile スマホ縦サイズ*/
+@media screen and (max-width:600px) { 
+    
+.article-wrapper{
+    width:100%;
+}
+    
+
+    
+.ribon{
+    padding:0 0 32px 0;
+}
+    
+.ribon img{
+    width: 95%;
+}
+    
+.rokaContentsContainer{
+    width: 100%;
+}
+    
+.pickupPosition{
+    font-size: 16px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-270%);
+}
+    
+.headLine{
+    font-size: 20px;
+} 
+    
+.rokaImg{
+    width: 90%;
+}
+    
+.rokaImgFig img{
+    width: 90%;
+}
+    
+.rokaText{
+    padding:0 15px;
+}
+    
+figcaption{
+    text-align: left;
+    line-height: 1.75;
+}
+    
+.addresWrapper{
+    padding:50px 15px 50px 15px;
+}
+    
+}

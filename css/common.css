@@ -1,0 +1,186 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size:14px;
+    color: #333333;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 100%;
+    background: fff;
+}
+
+.container{
+    width: 938px;
+    margin:0 auto;
+}
+
+.headerWrapper{
+    background-color:#ffe200;
+    /*position: fixed;*/
+    position: sticky;
+    top:0;
+    z-index: 10;
+    width: 100%;
+}
+/*レスポンシブにした時、ダミーの高さをどうすればよいかわからない。
+position:sticky；でうまくいったけどfixedでやる方法がわからない*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    padding:20px 10px;
+}
+
+.logo img{
+    width:100%; 
+}
+
+.headerNav{
+    display:flex;
+}
+
+.menu{
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: bold;
+    font-size:16px;
+    color:#333;
+}
+
+.menu:hover{ 
+    font-size: 18px;
+    position: relative;
+  	padding: 0.3em;
+  }
+
+.menu:hover:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    background: repeating-linear-gradient(-45deg, #ffe200, #ffe200 4px, white 4px, white 6px);
+  }
+
+/*.dummyHeader{
+    height: 153px;
+    width:100%;
+}*/
+
+/*.menu:hover{
+    color:#333;
+    font-size: 18px;
+    background: linear-gradient(transparent 50%, #fff 50%);
+}*/
+
+
+
+.footerWrapper{
+    background-color: #ffe200;
+    width:100%;
+}
+
+.navigation a:hover{
+    opacity:0.7;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerNav{
+    display: flex;
+    padding: 30px 0 30px 10px;
+}
+
+.footerList a{
+    padding-right: 32px;
+    text-decoration: none;
+    color:#333;
+}
+
+.footerList a:hover{
+    opacity: 0.5;
+}
+
+.copyright{
+    padding-right: 10px;
+}
+
+/*レスポンシブCSS*/
+
+
+
+@media screen and (max-width:600px){
+    
+.headerWrapper{
+     width: 100%;
+}
+    
+.container{
+    width: 100%;
+}
+    
+body{
+    font-size:12px;
+} 
+    
+.logo{
+    padding:0 10px 20px 10px;
+}
+    
+.logo img{
+    width: 100%;  
+    }
+
+.header{
+    flex-direction: column;
+    padding:20px 0;
+    text-align: center;
+    }
+    
+.menu{
+    font-size:14px;
+}
+
+.menu:hover{ 
+    font-size: 14px;
+  }
+    
+.NavLastchild{
+     margin-right: 0;   
+    }
+    
+/*.headerNav{
+   display: none;
+}
+jsできたらこれやる*/
+    
+    
+.footer{
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+}
+    
+.footerNav{
+    padding: 0 0 15px 0;
+}
+
+
+footer p.pagetop img{
+    position: fixed;
+    bottom:5px;
+    right:20px;
+    display: none;
+}
+
+

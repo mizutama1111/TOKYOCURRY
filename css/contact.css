@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import url(common.css);
+
+.contactWrapper{
+    padding:80px 0;
+}
+
+.contactContainer{
+    width: 460px;
+    margin: 0 auto;
+}
+
+.contactText{
+    padding:0 0 16px 0;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    width: 100%;
+}
+
+input[type="text"],
+input[type="email"]{
+    height: 30px;
+}
+
+textarea{
+    height:200px;
+    margin-bottom: 20px;
+}
+
+form label{
+    margin: 16px 0 8px 0;
+    display: inline-block;
+}
+
+button{
+    width: 100%;
+    padding:8px 0;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:600px) { 
+
+.contactContainer{
+    width: 95%;
+}
+    
+button{
+    padding:4px 0;
+}
+
+    
+}
