@@ -14,7 +14,7 @@ $(function(){
 			$('p.pagetop').fadeOut(300);
 		}
 	});
-	$('p.pagetop a').click(function () {
+	$('p.pagetop a').on("click", function () {
 		$('body,html').animate({
 			scrollTop: 0
 		}, 1000);
